@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		
+		<script>
+			
+			//数据类型
+			/*  布尔类型: Boolean
+				数字类型: Number (整型, 浮点型float)
+				字符串类型: String 
+				数组类型: Array 
+				对象类型: Object
+				特殊的类型: Null, Undefined
+			*/
+			
+			//typeof操作符: 检测值或者变量的数据类型
+			// 最好是在变量赋值之后再使用
+			var box = "张三";
+			console.log(typeof box); 
+			console.log(typeof "李四");
+			
+			//Undefined类型 
+			var box1;     //Undefined类型, 变量的值:undefined, 类型的值:undefined
+			console.log(box1);  //undefined
+			console.log(typeof box1); //undefined
+			
+			//console.log(typeof box2);
+			
+			
+			//Null类型
+			var box = null;   //Null类型, 变量的值:null 类型的值是:object
+			console.log(box);
+			console.log(typeof box); //object
+			
+			console.log(undefined == null); //undefined 和 null是值相等的
+			console.log(typeof undefined == typeof null); //数据类型不相等
+			
+			
+			//Boolean类型
+			var box = true; //Boolean类型, 变量值:true, 类型的值:boolean
+			console.log(box);
+			console.log(typeof box);
+			
+			//Boolean()
+			//NaN(Not a Number)
+			var hello;
+			var hello2 = Boolean(hello);
+			console.log(hello2);
+			console.log(typeof hello2);
+			
+			/*
+			String:     非空字符串为true, 空字符串为false
+			Number: 	非0数值为true, 0或者NaN为false
+			Object:     对象不为null则为true, null为false
+			Undefined :   undefined为false
+			*/
+			
+			
+			//Number类型
+			//整数
+			var box = 100;   //Number类型, 变量的值100, 类型的值:number
+			console.log(box);
+			console.log(typeof box);
+			
+			//浮点数
+			var box = 8.;
+			console.log(box);
+			console.log(typeof box);
+			
+			//科学计数法
+			var box = 4.12e5;
+			console.log(box);
+			
+			//无穷大: Infinity
+			//负无穷大: -Infinity
+			var box = 1/0;
+			console.log(box);
+			
+			//NaN
+			var box = 0/0;
+			console.log(box); //NaN
+			
+			var box = 1/0 * 0; 
+			console.log(box); //NaN
+			
+			
+			//iSNaN():判断是否是合法的数值
+			//NaN是不合法的
+			//数值或者数值型的字符串是合法的
+			//布尔类型true/false就是1/0的数值
+			
+			
+			
+		</script>
+		
+	</head>
+	
+	<body>
+	</body>
+	
+</html>
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 1.将这些二进制数字10010(2)   1100(2)  10111(2)转成10进制数字
+				八进制、十六进制
+				10010(2) 2^4 + 2^1
+				1100(2) 14
+				10111(2) 17
+				二进制--->十进制
+				0110 0100 换算成十进制
+				第0位 0 * 2^0 = 0
+				第1位 0 * 2^1 = 0
+				第2位 1 * 2^2 = 4
+				第3位 0 * 2^3 = 0
+				第4位 0 * 2^4 = 0
+				第5位 1 * 2^5 = 32
+				第6位 1 * 2^6 = 64
+				第7位 0 * 2^7 = 0
+				公式：第N位2(N)
+				
+				十进制--->二进制
+				6换算成二进制
+				6%2%2%2
+				
+				八进制--->十进制
+				八进制就是逢8进1。
+				1507换算成十进制。
+				第0位 7 * 8^0 = 7
+				第1位 0 * 8^1 = 0
+				第2位 5 * 8^2 = 320
+				第3位 1 * 8^3 = 512
+				
+				十进制--->八进制
+				100换算
+				100%8%8%8
+			 * */
+			var x = 32;
+			//十进制转其他  
+			console.log(x.toString(16));
+			console.log(x.toString(8));
+			console.log(x.toString(2));
+			var x='11';  
+			console.log(parseInt(x,2));  
+			console.log(parseInt(x,8));  
+			console.log(parseInt(x,16));  
+			//其他转其他  
+			//先用parseInt转成十进制再用toString转到目标进制  
+			console.log(String.fromCharCode(parseInt(141,8)))  
+			// 16进制转换到2进制
+			console.log(parseInt('ff',16).toString(10));
+			// 8进制转换到2进制
+			console.log(parseInt('141',8).toString(10));
+			/*
+			 				10010(2) 2^4 + 2^1
+				1100(2) 14
+				10111(2) 17
+			 * */
+			console.log(parseInt('10010',2).toString(10));
+			console.log(parseInt('1100',2).toString(8));
+			console.log(parseInt('10111',2).toString(16));
+			
+		</script>
+	</body>
+</html>

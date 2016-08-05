@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		
+		<script>
+			
+			//JS代码
+			//变量: 可以改变的量, 使用var(varible)声明
+			/*
+			var age; //声明一个变量, 变量的名称是age, var是关键字
+			alert(age); //undefined,未定义, 表示声明了未赋值
+			
+			age = 30; //等号=代表赋值, 限制age就是30
+			alert(age);  //30
+			
+			//变量名可以重复, 允许多次声明一个变量, 但是会覆盖前面的变量
+			var age = 20;  //声明变量age1, 并且赋值20
+			alert(age);
+			*/
+			
+			//同时声明多个变量
+			var name = "zhangsan", age = 18, sex = "men";
+			/*var name = "zhangsan";
+			var age = 18;
+			var sex = "men";*/
+			alert(name + "," + age + "," + sex);  //zhangsan,18,men
+			
+			
+			//弱类型, var
+			var temp;  //只是声明一个变量temp,还不知道temp是什么数据类型
+			alert(typeof temp); //typeof: 检测数据类型, undefined
+			
+			temp = 18;
+			alert(typeof temp); //number , 数字
+			
+			temp = "zhangsan";
+			alert(typeof temp); //string, 字符串
+			
+			
+			
+			//标识符的命名规范,变量名,函数名
+			/*
+				1, 首字符必须是字母或者下划线_或者美元符$
+				2, 除了首字符外, 其他字符必须是字母,下划线_, 美元符$或者数字
+				3, 不能使用关键字或者保留字
+				4, 尽量遵守驼峰原则
+				5, 命名尽量见名知意
+			*/
+			var $abc2 = 1;
+			//var class = 1;
+			
+			var myStudentGrade = 100; 
+			
+			
+		</script>
+		
+		
+	</head>
+	
+	<body>
+	</body>
+	
+	
+</html>
